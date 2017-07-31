@@ -1,0 +1,359 @@
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	min-width: 1450px;
+	margin: auto 0%;
+}
+
+.top {
+	background-color: #f6f6f6;
+	height: 246px;
+
+}
+
+.center {
+	background-color: #ffffff;
+	height : 30cm;
+
+}
+
+
+.bottom {
+	background-color: #f6f6f6;;
+	height: 7cm;
+	bottom: 0;
+	
+}
+
+.footer {
+	margin: auto 15%;
+	min-width: 1000px;
+}
+
+#call {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 9pt; 
+	position: static;
+
+	
+}
+
+ul.hr {
+	display: inline;
+	list-style-type:none;
+	padding-left: 20px;
+}
+
+ul.hr li {
+	display: inline;
+    padding: 5px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 9pt; 
+	position: static;
+
+   }
+
+.main_block {
+	background-color: #bfbfbf;
+	position: relative;
+	height: 35%;
+	width: 100%;
+	margin-top: 20px;
+	min-width: 1000px;
+
+}
+
+.to_create_margins {
+	margin: auto 15%;
+	min-width: 1000px;
+}
+
+.info_products {
+	text-align: bottom;
+	font-family: Palatino, serif; 
+	font-style: normal;
+    font-size: 12pt; 
+	position: relative;
+}
+
+#under_products {
+    border: none; /* Убираем границу */
+    background-color: #dddddd; /* Цвет линии */
+    color: #dddddd; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+	width: 100%;
+   }
+   
+.btn_left {
+	position: relative;
+	margin-left: 95%; 
+	left: 5px;
+	top: 20px;
+}
+
+.btn_right {
+	position: relative;
+	top: 17.9px;
+}
+
+.product {
+	background-color: #dddddd;
+	height: 6cm;
+	width: 4cm;
+	position: absolute;
+	margin-left: 200%;
+}
+
+.likeshare {
+	padding-left: 100px;
+	padding-top: 203px;
+}
+
+.name  {
+	color: #777777;
+	font-size: 10pt; 
+}
+.price {
+	color: #74d4f6;
+	font-size: 9pt; 
+}
+ 
+
+.addtocart {
+	border: none;
+	background-color: #dcf1ff;
+	color: #000000;
+	height: 40px;
+	width: 110px;
+
+}
+
+
+
+form {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  bottom: 40px;
+  margin-left: 320px;
+}
+
+.d1 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 0.25px solid #dddddd;
+  outline: none;
+}
+.d1 button {
+  position: absolute; 
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: black;
+}
+
+
+
+
+.usa {
+	position: relative;
+	left: 35%;
+	top: 1px;
+}
+
+.language {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	position: relative;
+	left: 35%;
+
+
+}
+
+.currency {
+	position: absolute;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	position: relative;
+	left: 38%;
+}
+
+
+.ultimo_theme {
+	position: relative;
+	padding-top: 50px;
+}
+
+
+
+ul#spisok_after_search  { 
+	display: inline;
+	position: relative;
+   	margin-left: 55%;
+   	bottom: 75px;
+    padding: 30px;
+    padding-left: 150px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 9pt; 
+    
+   }
+
+   ul#spisok_after_search li {
+   		padding: 10px;
+   }
+
+ul#menu {
+	font-size: 12pt; 
+	display: inline; 
+	position: absolute;
+	top: 4.4px;
+	margin-left: -20px;
+	min-width: 1000px;
+}
+
+
+
+ul#menu li { 
+    font-size: 12pt; 
+    padding: 20px;
+	display: inline; 
+	min-width: 1000px;
+   }
+
+#black_line {
+
+	border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 6px; /* Толщина линии */
+    width: 100%;
+	position: absolute;
+	top: 50px;
+}
+
+#greyblock {
+	background-color: #ebebeb;
+	position: absolute;
+	width: 70%;
+	height: 65px;
+	min-width: 1000px;
+}
+
+
+#black_button {
+	background-color: black;
+	color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	left: 5px;
+}
+
+
+#blue_button {
+	background-color: #5bd2ec;
+	color: black;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	left: 5px;
+}
+
+
+ul.hr_product {
+	margin: 0; /* Обнуляем значение отступов */
+    margin-left: 20px;
+    padding: 4px; /* Значение полей */
+    position: relative;
+   }
+
+ ul.hr_product li {
+    width: 150px; /* Ширина */
+    margin: 0 2% 2% 0; /* Отступы */
+    padding: 10px 0; /* Поля сверху и снизу */
+    text-align: left; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative;
+   }
+
+
+ul.hr_map li {
+
+	display: inline; /* Отображать как строчный элемент */
+    padding: 8px; /* Поля вокруг текста */
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 9pt; 
+	position: relative;
+	left: 15%;
+	top: 25px;
+}
+
+
+ul.hr_links li {
+
+	display: inline; /* Отображать как строчный элемент */
+    padding: 8px; /* Поля вокруг текста */
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 9pt; 
+	position: relative;
+	left: 60%;
+	top: -10px;
+}
+
+.bottom_center {
+	margin-top: 400px;
+	margin-left: 10px;
+
+}
+
+ul.hr_info {
+    margin: 0; /* Обнуляем значение отступов */
+    left: 15%;
+    padding-top: 50px;
+   }
+
+
+ ul.hr_info li {
+ 	font-size: 12pt;
+ 	left: 15%;
+ 	top: 7px;
+ 	position: relative;
+    width: 150px; /* Ширина */
+    text-align: left; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+   }
+
+
+
+ul.hr_pod_info li {
+	position: relative;
+	margin-left: -17px;
+	font-size: 10pt;
+	text-align: left;
+	left: -22px;
+}
+
+
+.end {
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	position: absolute;
+	margin-top: 100px;
+	left: 20%;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+   }
+   a:hover {
+		color: white;
+   }

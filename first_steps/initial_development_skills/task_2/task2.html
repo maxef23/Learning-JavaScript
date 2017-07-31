@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 2</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		
+
+		/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+	</script>
+</head>
+<body>
+	
+			<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdow Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Default Condition</a>
+    <a href="#">Option 1</a>
+    <a href="#">Option 2</a>
+  </div>
+</div>
+
+<div id='result'></div>
+
+
+</body>
+</html>

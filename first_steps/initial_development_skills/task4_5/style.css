@@ -1,0 +1,121 @@
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.top {
+	background-color: #ededed;
+	height : 2.5cm;
+
+}
+
+.center {
+	background-color: #ffffff;
+	height : 17.3cm;
+	text-align: bottom;
+	padding-top: 15px;
+
+}
+
+
+.bottom {
+	background-color: #ededed;
+	height: 4cm;
+	bottom: 0;
+	
+}
+
+.left-top {
+	margin: auto 200px;
+}
+
+#call {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 7pt; 
+	position: relative;
+	left: 25px;
+	top: -11px;
+	
+}
+
+
+ ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    padding: 5px; /* Поля вокруг текста */
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 7pt; 
+	position: relative;
+	left: 120px;
+	top: -42px;
+   }
+   
+.right-top {
+	text-align: right;
+}
+
+.main_block {
+	background-color: #bfbfbf;
+	height: 7cm;
+	width: 15cm;
+	margin: auto;
+}
+
+.info_products {
+	text-align: top;
+	font-family: Palatino, serif; 
+	font-style: normal;
+    font-size: 10pt; 
+	padding-top: 10px;
+	margin-left: 170px;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: #dddddd; /* Цвет линии */
+    color: #dddddd; /* Цвет линии для IE6-7 */
+    height: 0.5px; /* Толщина линии */
+	margin: 4px 180px;
+   }
+   
+.product {
+	background-color: #dddddd;
+	height: 4cm;
+	width: 3cm;
+	position: relative;
+	margin-left: 200px;
+}
+
+.likeshare {
+	padding-left: 65px;
+	padding-top: 126px;
+}
+
+.name  {
+	color: #777777;
+	font-size: 10pt; 
+}
+.price {
+	color: #74d4f6;
+	font-size: 9pt; 
+}
+ 
+
+.addtocart {
+	border: none;
+	background-color: #dcf1ff;
+	color: #000000;
+	height: 40px;
+	width: 110px;
+
+}
+
+.left {
+	left: 200px;
+	bottom: 110px;
+}
+
+
+
+
+
+
