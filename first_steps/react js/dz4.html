@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+
+<div id="content"></div>
+
+  <script type="text/babel" >
+
+var Variable = React.createClass({
+
+  getInitialState: function(){
+    return {
+      value1: 0,
+      value2: 0
+    }
+  },
+
+  handle1: function(event) {
+    var value1 = Number(event.target.value)
+    this.setState({
+        value1: value1
+    });
+  },
+
+  handle2: function(event) {
+    var value2 = Number(event.target.value)
+    this.setState({
+        value2: value2
+    });
+  },
+
+  render: function(){
+    return (
+      <div>
+        <input type="text" onChange={this.handle1} />
+        <input type="text" onChange={this.handle2} />
+        <div> {this.state.value1 + this.state.value2} </div>
+        <div> {this.state.value1 - this.state.value2} </div>
+        <div> {this.state.value1 * this.state.value2} </div>
+      </div>
+    );
+  }
+});
+
+ReactDOM.render(
+    <Variable />,
+    document.getElementById("content")
+);
+
+
+
+  </script>
+  </body>
+  </html>

@@ -1,0 +1,23 @@
+ body {
+ 	background-color: #ccc;
+ 	text-align: center;
+ }
+
+ #right {
+ 	padding-left: 200px;
+}
+
+#left {
+	padding-right: 200px;
+}
+
+#NewMes {
+	width: 200px;
+	height: 40px;
+}
+
+#chat {
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}

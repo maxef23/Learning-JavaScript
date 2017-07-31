@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Messendger</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1 id="chat">Chat</h1>
+	<div id='content'></div>
+
+    <script type="text/babel">
+
+    
+
+    localStorage.setItem('0', 'How do you feel about this messenger?)');
+    if (localStorage[1] == undefined){
+	    var date = new Date().getTime();
+	    localStorage.setItem('1', date);
+	}
+
+
+	var App = React.createClass({
+		render :function(){
+			return ;
+		}
+	})
+
+	
+	var Message  = React.createClass({
+
+	
+	render: function(){
+	var now = new Date().getTime();
+	var exact_time = (now - this.props.date)/60000;
+		if (this.props.item != "") {
+			if (this.props.id == 0){
+				return (<div id="right"> 
+							<ul>
+								<div>{this.props.item}</div>
+								<div>{5 + Math.round(exact_time)} minutes ago</div>
+							</ul>
+					 </div>);
+				} else {
+					return (<div id="left"> 
+							<ul>
+								<div>{this.props.item}</div>
+								<div>{Math.round(exact_time)} minutes ago</div>
+							</ul>
+					</div>);
+					 }
+				} else { return null}
+		}
+
+	});
+
+	var MessageList  = React.createClass({
+
+	getInitialState: function() {
+				var arr_id = _.map(localStorage, function(item, key){
+                        return key;
+                    });
+				
+				
+                return {
+                    id: arr_id
+                };
+            },
+
+	addMessage: function(event){
+		var value = document.getElementById("NewMes").value;
+		if (value == "") {
+			return ;
+		}
+		localStorage.setItem(localStorage.length , value);
+		document.getElementById("NewMes").value = "";
+		var date = new Date().getTime();
+		localStorage.setItem(localStorage.length, date);
+		var arr_id = this.state.id.concat([this.state.id.length, this.state.id.length + 1] )
+		this.setState({
+			id: arr_id
+		});
+	},
+	
+	render: function(){
+		
+
+     
+		
+		return (<div> 			
+			{
+				this.state.id.map(function(i){
+					if (i % 2 == 0) {
+						return <Message key={i} id={i} item={localStorage[i]} date={localStorage[i+1]}/>;
+					}
+				})
+			}
+			<input type="text" id="NewMes" />
+			<input type="button" onClick={this.addMessage} value="Send"/>
+			</div>);
+		}	
+	});
+
+	ReactDOM.render(
+            <MessageList />,
+            document.getElementById("content")
+        );
+    </script>
+</body>
+</html>
